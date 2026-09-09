@@ -115,6 +115,12 @@ textarea {
   color: var(--text);
 }
 
+/* 비밀번호 마스킹 글리프(●)가 커스텀 웹폰트에 없어 아무것도 안 보이는 문제 방지 —
+   password 입력창만 마스킹 문자를 확실히 지원하는 기본 시스템 폰트를 사용한다. */
+input[type='password'] {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Malgun Gothic', sans-serif;
+}
+
 a {
   color: var(--primary);
 }
